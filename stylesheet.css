@@ -167,6 +167,12 @@ span.highlight {
     font-size: 24px;
   }
   
+  /* Make xzq_character.png responsive */
+  name img[src*="xzq_character.png"] {
+    width: 60px !important;
+    height: auto;
+  }
+  
   /* Paper images in research section */
   td img[width="320"] {
     width: 100% !important;

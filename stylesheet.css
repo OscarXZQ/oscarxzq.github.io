@@ -129,3 +129,69 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* Responsive styles for mobile */
+@media screen and (max-width: 768px) {
+  /* Make tables stack vertically on mobile */
+  table tbody tr {
+    display: block;
+  }
+  
+  table tbody tr td {
+    display: block;
+    width: 100% !important;
+    text-align: center;
+    padding: 10px !important;
+  }
+  
+  /* Profile section adjustments */
+  table tbody tr td:first-child {
+    padding-bottom: 0 !important;
+  }
+  
+  /* Make images responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+    width: auto !important;
+    max-width: 280px;
+  }
+  
+  /* Profile photo specific */
+  .hoverZoomLink {
+    max-width: 200px !important;
+  }
+  
+  /* Name and text adjustments */
+  name {
+    font-size: 24px;
+  }
+  
+  /* Paper images in research section */
+  td img[width="320"] {
+    width: 100% !important;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  
+  /* Adjust heading size */
+  heading {
+    font-size: 18px;
+  }
+  
+  /* Paper title */
+  papertitle {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  /* Make text left-aligned on mobile for readability */
+  td[style*="vertical-align:middle"] {
+    text-align: left !important;
+  }
+  
+  /* Center images */
+  td:has(img) {
+    text-align: center !important;
+  }
+}

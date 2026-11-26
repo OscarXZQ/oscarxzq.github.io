@@ -11,10 +11,10 @@
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <table class="site" style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table class="profile" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr style="padding:0px">
             <td style="padding:2.5%;width:63%;vertical-align:middle">
               <p style="text-align:center">
@@ -23,25 +23,24 @@
               </p>
               
               
-              <p> I am a Ph.D. student at University of Pennsylvania, advised by Prof. <a href="https://www.cis.upenn.edu/~mhnaik/">Mayur Naik</a>. I seek to understand how neural networks work and develop simple methods to improve how we train and use neural networks.
+              <p>I am a cofounder and CTO of <a href="https://rabdos.ai/">Rabdos AI</a>, where we supply research tasks to frontier AI labs for model training.
+                I am also a Ph.D. student at the University of Pennsylvania, advised by Prof. <a href="https://www.cis.upenn.edu/~mhnaik/">Mayur Naik</a>.
+                I seek to understand how neural networks work and develop simple methods to improve how we train, use, and evaluate neural networks.
               </p>
-                <p>I complete my Master of Science degree from <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, advised by Prof. <a href="http://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a> , 
-                  where I work on computer vision and representation learning.
-
-                 Before that, I was an undergraduate student at UC Berkeley, majoring in Computer Science 
-                 and Applied Mathematics. I also interned at <a href="https://about.twitter.com/en">Twitter</a>. 
-                 </p>
-                <p style="text-align:center">
-                  <a href="mailto:oscarxzq@seas.upenn.edu">Email</a> &nbsp/&nbsp
-                  <a href="https://scholar.google.com/citations?hl=en&user=SEbcuNoAAAAJ">Google Scholar</a> &nbsp/&nbsp
-                  <a href="https://twitter.com/oscar_zhiqiu_xu">Twitter</a> &nbsp/&nbsp
-                  <a href="https://github.com/OscarXZQ/">Github</a> &nbsp/&nbsp
-                  <a href="images/wechat.jpg">Wechat</a>
-                  &nbsp/&nbsp
+                <p>I earned my master’s and bachelor’s degrees from <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>,
+                  where I worked on computer vision and representation learning with Prof. <a href="http://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>
+                  during my master’s and majored in computer science and applied mathematics as an undergraduate.
+                </p>
+                <p class="profile-links" style="text-align:center">
+                  <a href="mailto:oscarxzq@seas.upenn.edu">Email</a> <span aria-hidden="true">&nbsp;/&nbsp;</span>
+                  <a href="https://scholar.google.com/citations?hl=en&user=SEbcuNoAAAAJ">Google Scholar</a> <span aria-hidden="true">&nbsp;/&nbsp;</span>
+                  <a href="https://twitter.com/oscar_zhiqiu_xu">Twitter</a> <span aria-hidden="true">&nbsp;/&nbsp;</span>
+                  <a href="https://github.com/OscarXZQ/">Github</a> <span aria-hidden="true">&nbsp;/&nbsp;</span>
+                  <a href="images/wechat.jpg">Wechat</a> <span aria-hidden="true">&nbsp;/&nbsp;</span>
                   <a href="https://www.linkedin.com/in/oscar-xu-1250821a1/">Linkedin</a>
                 </p>
             </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
+            <td class="profile-photo" style="padding:2.5%;width:40%;max-width:40%">
               <a href="images/xzq.png"><img
                       style="width:80%;max-width:80%" alt="profile photo" src="images/xzq.png" class="hoverZoomLink"></a>
             </td>
@@ -63,7 +62,7 @@
 
         <heading>Research</heading> (* equal contribution)
           <br> <br>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="research" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
@@ -72,7 +71,7 @@
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <papertitle>Environment Duels: A Microcosm of LLM Co-Evolution</papertitle>
                 <br>
-                Shibo Jin*,
+                <a href="https://shibojin.github.io/">Shibo Jin*</a>,
                 <strong>Zhiqiu Xu*</strong>,
                 Yiling Zou,
                 Shangyu Gong,
@@ -92,8 +91,8 @@
               <papertitle>MathDuels: A Self-Play Benchmark That Grows</papertitle>
             <br>
             <strong>Zhiqiu Xu*</strong>,
-            Shibo Jin*,
-            Shreya Arya,
+            <a href="https://shibojin.github.io/">Shibo Jin*</a>,
+            <a href="https://shreyaarya.github.io/minimal/">Shreya Arya</a>,
             <a href="https://www.cis.upenn.edu/~mhnaik/">Mayur Naik</a>
             <br>
             <em>COLM</em> 2026
@@ -103,7 +102,7 @@
 
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
-                  <img src='images/delta_activations.svg' width="320">
+                  <img src='images/delta_activations.svg' width="320" alt="Delta Activations method diagram">
               </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <papertitle>Delta Activations: A Representation for Finetuned Large Language Models</papertitle>
@@ -253,7 +252,7 @@
               <li> Yanjie Chen</li>
               <li> <a href="https://boyazeng.github.io/">Boya Zeng</a> (now Ph.D. student at Princeton University)</li>
               <li> <a href="https://amishsethi.github.io/personal-website/">Amish Sethi</a> (incoming Ph.D. student at Harvard University)</li>
-              <li> Shibo (Robin) Jin (incoming Ph.D. student at University of Pennsylvania)</li>
+              <li> <a href="https://shibojin.github.io/">Shibo (Robin) Jin</a> (incoming Ph.D. student at University of Pennsylvania)</li>
           </p>
         </td>
       </tr>

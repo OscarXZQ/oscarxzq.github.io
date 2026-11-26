@@ -130,74 +130,91 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-/* Responsive styles for mobile */
 @media screen and (max-width: 768px) {
-  /* Make tables stack vertically on mobile */
-  table tbody tr {
+  body {
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  body, td, p, a, strong, papertitle {
+    font-size: 16px;
+  }
+
+  .site {
+    table-layout: fixed;
+  }
+
+  .site > tbody > tr > td {
+    padding: 16px !important;
+  }
+
+  .profile, .profile > tbody, .profile tr, .profile td,
+  .research, .research > tbody, .research tr, .research td {
     display: block;
   }
-  
-  table tbody tr td {
-    display: block;
-    width: 100% !important;
-    text-align: center;
-    padding: 10px !important;
-  }
-  
-  /* Profile section adjustments */
-  table tbody tr td:first-child {
-    padding-bottom: 0 !important;
-  }
-  
-  /* Make images responsive */
-  img {
-    max-width: 100%;
-    height: auto;
+
+  .profile td, .research td {
     width: auto !important;
-    max-width: 280px;
+    padding: 0 !important;
   }
-  
-  /* Profile photo specific */
-  .hoverZoomLink {
-    max-width: 200px !important;
+
+  .profile td > p:first-child {
+    margin-top: 0;
   }
-  
-  /* Name and text adjustments */
-  name {
-    font-size: 24px;
+
+  .profile name {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: clamp(22px, 6vw, 28px);
   }
-  
-  /* Make xzq_character.png responsive */
-  name img[src*="xzq_character.png"] {
-    width: 60px !important;
-    height: auto;
+
+  .profile name img {
+    width: 52px !important;
+    margin-top: 0 !important;
   }
-  
-  /* Paper images in research section */
-  td img[width="320"] {
-    width: 100% !important;
-    max-width: 280px;
-    margin: 0 auto;
+
+  .profile-photo {
+    max-width: none !important;
+    text-align: center;
+    margin: 12px 0 24px;
   }
-  
-  /* Adjust heading size */
-  heading {
-    font-size: 18px;
+
+  .profile-photo img {
+    width: 140px !important;
+    max-width: 100% !important;
   }
-  
-  /* Paper title */
-  papertitle {
+
+  .profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 16px;
+  }
+
+  .profile-links a {
+    padding: 4px 0;
+  }
+
+  .profile-links span {
+    display: none;
+  }
+
+  .research tr {
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .research td:first-child {
+    margin-inline: -12px;
+  }
+
+  .research img {
     display: block;
-    margin-bottom: 8px;
-  }
-  
-  /* Make text left-aligned on mobile for readability */
-  td[style*="vertical-align:middle"] {
-    text-align: left !important;
-  }
-  
-  /* Center images */
-  td:has(img) {
-    text-align: center !important;
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    margin: 0 auto 10px;
   }
 }
